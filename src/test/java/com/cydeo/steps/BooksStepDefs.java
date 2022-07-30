@@ -47,4 +47,32 @@ public class BooksStepDefs {
 
     }
 
+    @Then("verify book categories must match book categories table from db")
+    public void verify_book_categories_must_match_book_categories_table_from_db() {
+
+        //Run query
+
+        String query="select name from book_categories";
+
+        DB_Util.runQuery(query);
+
+        //store data
+        // we have one column, so we can either use index number, or column label as a string
+        List<String> expectedCategoryList = DB_Util.getColumnDataAsList(1);
+
+        //Assertion
+
+        Assert.assertEquals(expectedCategoryList, actualCategoryList);
+
+
+    }
+
+    @Then("book information must match the database for {string}")
+    public void book_information_must_match_the_database_for(String bookName) {
+
+
+
+
+    }
+
 }

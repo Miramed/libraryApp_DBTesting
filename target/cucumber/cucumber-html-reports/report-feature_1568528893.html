@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>30 Jul 2022, 09:07</td>
+      <td>30 Jul 2022, 11:36</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="5848058200">5.848</td>
+          <td class="duration" data-value="5740370800">5.740</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -186,17 +186,20 @@ $(document).ready(function() {
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149507997.html">@wip</a>
+       <a href="report-tag_2147548349.html">@db</a>
 </div>
 
 
-  <span class="lead-duration duration">5.848</span>
+  <span class="lead-duration duration">5.740</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">verify book categories with UI</span>
+  <span class="name">verify book categories with DB</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -225,9 +228,25 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
+              <span class="location name">com.cydeo.steps.Hooks.setUpDB()</span>
+
+  <span class="lead-duration duration">1.434</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
               <span class="location name">com.cydeo.steps.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">8.997</span>
+  <span class="lead-duration duration">3.754</span>
 
           </div>
 
@@ -264,7 +283,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">the user logged in as <span class="argument">&quot;librarian&quot;</span></span>
 
-  <span class="lead-duration duration">4.737</span>
+  <span class="lead-duration duration">4.439</span>
 
 </div>
 
@@ -291,7 +310,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">the user navigates to <span class="argument">&quot;Books&quot;</span> page</span>
 
-  <span class="lead-duration duration">0.132</span>
+  <span class="lead-duration duration">0.172</span>
 
 </div>
 
@@ -318,7 +337,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">the user gets all book categories in webpage</span>
 
-  <span class="lead-duration duration">0.961</span>
+  <span class="lead-duration duration">1.039</span>
 
 </div>
 
@@ -343,9 +362,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">user should be able to see following categories</span>
+  <span class="name">verify book categories must match book categories table from db</span>
 
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.089</span>
 
 </div>
 
@@ -355,68 +374,6 @@ $(document).ready(function() {
 
 
 
-          <table class="step-arguments">
-              <tr>
-                  <td>Action and Adventure</td>
-              </tr>
-              <tr>
-                  <td>Anthology</td>
-              </tr>
-              <tr>
-                  <td>Classic</td>
-              </tr>
-              <tr>
-                  <td>Comic and Graphic Novel</td>
-              </tr>
-              <tr>
-                  <td>Crime and Detective</td>
-              </tr>
-              <tr>
-                  <td>Drama</td>
-              </tr>
-              <tr>
-                  <td>Fable</td>
-              </tr>
-              <tr>
-                  <td>Fairy Tale</td>
-              </tr>
-              <tr>
-                  <td>Fan-Fiction</td>
-              </tr>
-              <tr>
-                  <td>Fantasy</td>
-              </tr>
-              <tr>
-                  <td>Historical Fiction</td>
-              </tr>
-              <tr>
-                  <td>Horror</td>
-              </tr>
-              <tr>
-                  <td>Science Fiction</td>
-              </tr>
-              <tr>
-                  <td>Biography/Autobiography</td>
-              </tr>
-              <tr>
-                  <td>Humor</td>
-              </tr>
-              <tr>
-                  <td>Romance</td>
-              </tr>
-              <tr>
-                  <td>Short Story</td>
-              </tr>
-              <tr>
-                  <td>Essay</td>
-              </tr>
-              <tr>
-                  <td>Memoir</td>
-              </tr>
-              <tr>
-                  <td>Poetry</td>
-              </tr>
-          </table>
 
 
 
@@ -452,7 +409,23 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.183</span>
+  <span class="lead-duration duration">1.462</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.cydeo.steps.Hooks.destroyDB()</span>
+
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
